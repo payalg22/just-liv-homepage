@@ -1,10 +1,13 @@
 import "./App.css";
+import Features from "./components/Features";
+import Hero from "./components/Hero";
 
 function App() {
   return (
-    <>
-      <h1>Fusion Code</h1>
-    </>
+    <div className="container">
+      <Hero />
+      <Features />
+    </div>
   );
 }
 
