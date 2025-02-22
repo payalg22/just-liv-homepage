@@ -4,13 +4,18 @@
   width: 100%;
   margin: 0;
   text-align: center;
-  padding-bottom: 25px;
 }
 
 .container {
   display: flex;
   flex-direction: column;
+  font-family: Lato, "serif";
   --heading-font: Fraunces, "serif";
   --text-font: Lato, "serif";
-  font-family: Lato, "serif";
+  --primary-text: #384252;
+  --primary-heading: oklch(21% 0.006 285.885);
+}
+
+.container > div {
+    margin: 25px 0;
 }

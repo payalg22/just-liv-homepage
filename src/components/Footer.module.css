@@ -1,0 +1,38 @@
+.container {
+    background-color: #3a4e78;
+    color: #ffffff;
+    padding: 64px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.container a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.link {
+    margin-bottom: 55px;
+    padding: 4px;
+}
+
+.link img{
+    vertical-align: middle;
+    padding: 0 10px 5px 0;
+}
+
+.linkedin {
+    margin: 15px;
+}
+
+.container p:last-child {
+    margin: 5px 0;
+}

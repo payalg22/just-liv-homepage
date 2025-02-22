@@ -10,16 +10,86 @@ p.heading {
 }
 
 .features {
-    width: 90%;
+    width: 95%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 25px;
 }
 
 .card {
     box-sizing: border-box;
-    width: 30%;
+    width: 350px;
     text-align: left;
     padding: 24px;
     box-shadow: 0 0 16px 2px #0000000d;
-    border-radius: 24px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 10px;
+    line-height: 1.5em;
+}
+
+.title {
+    color: var(--primary-text);
+    font-size: 21px;
+    font-family: var(--heading-font);
+    margin: 0 0 8px 0;
+    line-height: 1.5em;
+}
+
+.content {
+    flex: 1;
+    color: #959aa2;
+    margin: 0;
+    padding-bottom: 6px;
+}
+
+.star {
+    height: 20px;
+    width: 20px;
+}
+
+.hero {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+@media (max-width: 1280px) {
+    .card {
+        width: 272px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .features {
+        flex-wrap: wrap;
+        width: 570px;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        text-align: left;
+    }
+
+    .heading {
+        width: 570px;
+    }
+}
+
+@media (max-width: 640px) {
+    .container > * {
+        width: 90%;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
 }

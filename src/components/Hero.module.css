@@ -1,6 +1,11 @@
 .container {
     width: 100%;
     height: 100vh;
+    box-sizing: border-box;
+    padding: 0 24px 80px 24px;
+    letter-spacing: 0.01em;
+    line-height: 2.5em;
+    margin-top: 0 !important;
 }
 
 .container * {
@@ -14,6 +19,7 @@
     top: 0;
     left: 0;
     z-index: -1;
+    height: 100%;
 }
 
 .heroMb {
@@ -24,19 +30,27 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    height: 90%;
+    height: 100%;
     align-items: center;
     justify-content: flex-end;
     color: #ffffff;
     gap: 5px;
 }
 
-.text {
-    font-size: 1.25em;
-    margin: 15px;
+.main {
+    display: none;
 }
 
-p.heading {
+.content > * {
+    width: 80%;
+}
+
+.text {
+    font-size: 1.25em;
+    margin: 16px;
+}
+
+p.heading, .main {
     font-family: var(--heading-font);
     font-size: 2.25em;
 }
@@ -50,12 +64,48 @@ p.heading {
     color: #000000;
     font-size: 18px;
     border-radius: 50px;
-    margin: 10px;
+    margin-top: 10px;
 }
 
+.join a {
+    text-decoration: none;
+    color: #000000;
+    line-height: 1em;
+}
 
+@media (max-width: 768px) {
+    .content > * {
+        width: 65%;
+        line-height: 1.1em;
+    }
+
+    .content {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    p.heading {
+        font-size: 27px;
+    }
+}
 
 @media (max-width: 640px) {
+    .container {
+        padding: 0 16px 80px 16px;
+    }
+    .content > * {
+        width: 100%;
+    }
+
+    p.heading {
+        display: none;
+    }
+
+    .main {
+        display: block;
+        font-size: 27px;
+    }
+
     .heroMain {
         display: none;
     }
